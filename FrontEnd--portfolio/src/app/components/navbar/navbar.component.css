@@ -1,0 +1,72 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;                /* ✅ IMPORTANT */
+  width: 100%;
+  padding: 20px 8%;
+  z-index: 1000;
+
+  background: linear-gradient(
+    to right,
+    rgba(58, 60, 78, 0.9),
+    rgba(15, 20, 33, 0.9)
+  );
+
+  backdrop-filter: blur(10px);
+}
+
+/* 🔥 MAIN CONTAINER */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;           /* ✅ IMPORTANT */
+}
+
+/* LOGO */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.logo span {
+  color: #ff00aa;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;             /* ✅ FIX */
+  padding: 0;            /* ✅ FIX */
+}
+
+/* SPACING */
+.nav-links li {
+  margin-left: 30px;
+}
+
+/* LINKS */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+}
+
+/* HOVER EFFECT */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  /* background: #ff00aa; */
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}

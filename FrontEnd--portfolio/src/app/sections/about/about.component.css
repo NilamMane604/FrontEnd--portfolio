@@ -1,0 +1,58 @@
+.about {
+  padding: 100px 8%;
+}
+
+/* 🔥 TITLE CENTER */
+.about-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+/* 🔥 MAIN BOX (LIKE CARD) */
+.about-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  background: #0f172a;          /* card background */
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* IMAGE */
+.about-img img {
+  width: 280px;
+  border-radius: 15px;
+}
+
+/* TEXT */
+.about-content {
+  max-width: 500px;
+}
+
+.about-content h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+  color: #94a3b8;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .about-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 220px;
+  }
+
+}
